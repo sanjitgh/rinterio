@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio : Home</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind configration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              title_color: "#212121",
+              text_color: "#494949",
+              text_color2: "#737373",
+              leaf_color: "#ABEF5F",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- custom css -->
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+      ul > li > a:active {
+        background: transparent !important;
+        color: inherit !important;
+      }
+      .cumstom_bg {
+        background-color: transparent !important;
+      }
+    </style>
+  </head>
+  <body class="manrope">
+    <header class="bg-gradient-to-t from-white to-[#f4f4f4]">
+      <nav class="max-w-[1170px] mx-auto px-2 lg:px-0 py-4">
+        <div class="navbar">
+          <div class="navbar-start w-1/2 sm:w-1/2 lg:w-1/5">
+            <!-- logo -->
+            <a href="index.html">
+              <img class="max-w-40" src="assets/logo.png" alt="" />
+            </a>
+          </div>
+
+          <!-- main menu -->
+          <div class="navbar-center hidden lg:block">
+            <ul class="menu menu-horizontal px-1 text-text_color2 text-base">
+              <li>
+                <a href="#" class="text-title_color font-bold cumstom_bg"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:bg-inherit cumstom_bg">Service</a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-inherit cumstom_bg">Portfolio</a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-inherit cumstom_bg">Blogs</a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-inherit cumstom_bg">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar-end">
+            <div class="hidden sm:block">
+              <ul class="flex gap-4 mr-5">
+                <li
+                  class="w-12 h-12 bg-white flex justify-center items-center border border-gray-200 rounded-full"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li
+                  class="w-12 h-12 bg-white flex justify-center items-center border border-gray-200 rounded-full"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- button -->
+            <div class="hidden sm:block">
+              <a
+                class="flex items-center gap-2 bg-leaf_color font-extrabold text-base xl:text-lg rounded-full py-2 xl:px-5 px-3 cursor-pointer text-[#1C1C1C]"
+                >Book Consult
+                <span class="bg-[#1C1C1C] rounded-full p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg> </span
+              ></a>
+            </div>
+
+            <!-- dropdown menu start -->
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden pr-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 bg-white border border-[#E9E9E9] rounded-full w-8 h-8 p-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-md z-[1] mt-3 w-52 p-2 shadow right-0 text-text_color2 text-base"
+              >
+                <li>
+                  <a href="#" class="text-title_color font-bold cumstom_bg"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:bg-inherit cumstom_bg">Service</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:bg-inherit cumstom_bg">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:bg-inherit cumstom_bg">Blogs</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:bg-inherit cumstom_bg">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <!-- dropdown menu end -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main area -->
+     <main>
+      
+     </main>
+  </body>
+</html>
